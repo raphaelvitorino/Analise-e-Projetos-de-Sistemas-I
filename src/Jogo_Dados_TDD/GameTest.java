@@ -13,12 +13,10 @@ public class GameTest extends TestCase {
 		game.setA(new Dice());
 		game.setB(new Dice());
 		boolean result = game.play();
-		if (result == true || result == false) {
-			assertTrue(true);
-		}
-		else {
-			assertTrue(false);
-		}
+		
+		assertTrue(true, result);
+	}
+
 	}
 
 }
