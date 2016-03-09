@@ -11,13 +11,8 @@ public class DiceTest extends TestCase {
 	public void testRoll() {
 		Dice dice = new Dice();
 		int result = dice.roll(dice);
-		
-		if(result <= 6 && result >= 1) {
-			assertTrue(true);
-		}
-		else {
-			assertTrue(false);
-		}
+
+		assertEquals(true, result);
 	}
 
 }
